@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+   
+ <hibernate-mapping>  
+  <class name="com.model.Offer" table="offer">  
+    <id name="ofid">  
+     <generator class="increment"></generator>  
+    </id>        
+    <property name="product"></property>  
+    <property name="offer_discount"></property>
+    <property name="start_date"></property>
+    <property name="end_date"></property>  
+    <property name="photo" type="binary"></property>         
+    <property name="OwnerId"></property>
+    <property name="Scategory"></property>
+  </class>              
+ </hibernate-mapping>
